@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css local -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulario Contacto</h1>
+    <p id="description">This form we help to understend how people think abaout manga japanese.</p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">
+          Name
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="email">
+          Email
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label" for="numberl">
+          Number
+          <input type="number" id="number" pattern="[0-9]" placeholder="Enter your age" min="8" max="10" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">
+          Select your manga favorite
+          <select id="dropdown">
+            <option value="">Select one option</option>
+            <option value="1">One Pice</option>
+            <option value="2">Dragon Ball</option>
+            <option value="3">Naruto</option>
+          </select>
+        </label>
+
+        <p>Select your genere of manga favorite</p>
+        <label for="action">
+          <input class="inline" type="radio" id="action" name="genere" value="action" /> Action
+        </label>
+        <label for="radio">
+          <input class="inline" type="radio" id="aventure" name="genere" value="aventure" /> Aventure
+        </label>
+        <label for="radio">
+          <input class="inline" type="radio" id="mistery" name="genere" value="mistery" /> Mistery
+        </label>
+
+        <p>Select your Mangaka favorite</p>
+        <label for="mangaka-1">
+          <input class="inline" type="checkbox" value="Akira-Toriyama" id="mangaka-1" /> Akira Toriyama
+        </label>
+        <label for="mangaka-2">
+          <input class="inline" type="checkbox" value="Masashi-Kishimoto" id="mangaka-2" /> Masashi Kishimoto
+        </label>
+        <label for="mangaka-3l">
+          <input class="inline" type="checkbox" value="Eiichiro-Oda" id="mangaka-3" /> Eiichiro Oda
+        </label>
+        <label for="mangaka-4">
+          <input class="inline" type="checkbox" value="Takehiko-Inoue" id="mangaka-4" /> Takehiko Inoue
+        </label>
+
+        <p>Coments abaout the mangas in general</p>
+        <label for="text-area">
+          <textarea name="" id="text-area" cols="30" rows="5" placeholder="Coments..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
