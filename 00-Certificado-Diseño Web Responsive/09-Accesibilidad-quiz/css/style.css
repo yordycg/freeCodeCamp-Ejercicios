@@ -82,7 +82,7 @@ p {
 section {
   width: 80%;
   max-width: 600px;
-  margin: 0 auto 10px;
+  margin: 0 auto 10px auto;
 }
 input {
   font-size: 18px;
@@ -123,14 +123,11 @@ los lectores de pantalla lean */
   border: 0;
 }
 .info {
-  padding-top: 10px;
-  padding-bottom: 0;
-  padding-right: 0;
-  padding-left: 1px;
+  padding: 10px 0 0 5px;
 }
 .formrow {
-  margin-top: 1px;
-  padding: 0 1px;
+  margin-top: 30px;
+  padding: 0 15px;
 }
 .info input,
 .info label {
