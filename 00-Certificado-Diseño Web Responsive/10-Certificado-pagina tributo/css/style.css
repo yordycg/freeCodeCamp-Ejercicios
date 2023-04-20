@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 70%;
+  height: 100vh;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1,
+h2,
+p {
+  text-align: center;
+  padding: 20px 0;
+}
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  text-align: center;
+  padding-top: 20px;
+}
+ul > li {
+  margin-left: 80px;
+  padding: 0.5rem;
+}
+a {
+  text-decoration: none;
+}
