@@ -1,4 +1,50 @@
-.flex {
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #0a0a23;
+}
+/* selector que hace referencia a cualquier elemento
+<span> que tenga la clase "sr-only" */
+/* ! OCULTAR UN ELEMENTO, PERO QUE ACCESIBILIDAD LO PUEDA LEER */
+span[class~="sr-only"] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  /* evita que el contenid se desborde */
+  overflow: hidden;
+  white-space: nowrap;
+  /* saca los elementos del flujo del documento */
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+}
+h1 {
+  max-width: 37.25rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+h1 .flex {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+/* :first-of-type --> apunta al PRIMER elemento,
+que coincida con el selector (ejemplo 'span') */
+h1 .flex span:first-of-type {
+  font-size: 0.7em;
+}
+/* :last-of-type --> apunta al ULTIMO elemento,
+que coincida con el selector (ejemplo 'span') */
+h1 .flex span:last-of-type {
+  font-size: 1.2em;
+}
+/* estilo a la tabla */
+section {
+  max-width: 40rem;
+  margin: 0 auto;
+  border: 2px soild #d0d0d5;
 }
