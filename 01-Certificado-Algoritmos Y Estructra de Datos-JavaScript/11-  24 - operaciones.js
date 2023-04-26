@@ -78,3 +78,53 @@ console.log(`resto de 5 % 2:  ${a}`);
 console.log(`resto de 18 % 9:  ${b}`);
 
 // ! 21 - asignacion compuesta con adiccion aumentada
+
+/* 
+a = a + 4 === a += 4
+*/
+
+let c = 3;
+let d = 17;
+let e = 12;
+
+c += 12;
+d += 9;
+e += 7;
+
+console.log(c, d, e);
+
+// ! 22 - asignacion compuesta con resta aumentada
+
+let f = 3;
+let g = 17;
+let h = 12;
+
+f -= 12;
+g -= 9;
+h -= 7;
+
+console.log(f, g, h);
+
+// ! 23 - asignacion compuesta con multiplicacion aumentada
+
+let i = 3;
+let j = 17;
+let k = 12;
+
+i *= 2;
+j *= 1;
+k *= 8;
+
+console.log(i, j, k);
+
+// ! 24 - asignacion compuesta con division aumentada
+
+let l = 3;
+let m = 17;
+let n = 12;
+
+l /= 5;
+m /= 1;
+n /= 3;
+
+console.log(l, m, n);
