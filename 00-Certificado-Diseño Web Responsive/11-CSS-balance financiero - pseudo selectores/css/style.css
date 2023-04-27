@@ -5,7 +5,7 @@ body {
   font-family: sans-serif;
   color: #0a0a23;
 }
-/* selector que hace referencia a cualquier elemento
+/* * selector que hace referencia a cualquier elemento
 <span> que tenga la clase "sr-only" */
 /* ! OCULTAR UN ELEMENTO, PERO QUE ACCESIBILIDAD LO PUEDA LEER */
 span[class~="sr-only"] {
@@ -37,14 +37,36 @@ que coincida con el selector (ejemplo 'span') */
 h1 .flex span:first-of-type {
   font-size: 0.7em;
 }
-/* :last-of-type --> apunta al ULTIMO elemento,
-que coincida con el selector (ejemplo 'span') */
+/* * :last-of-type --> apunta al ULTIMO elemento, que coincida con el selector (ejemplo 'span') */
 h1 .flex span:last-of-type {
   font-size: 1.2em;
 }
-/* estilo a la tabla */
+/* * estilo a la tabla */
 section {
   max-width: 40rem;
   margin: 0 auto;
   border: 2px soild #d0d0d5;
+}
+#years {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  background-color: #0a0a23;
+  color: #fff;
+  margin: 0 -2px;
+  /* * calc() -> calcular valores basado en otros valores */
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+  z-index: 999;
+}
+#years span[class] {
+  font-weight: bold;
+  text-align: right;
+  width: 4.5rem;
+}
+.table-wrap {
+  padding: 0 0.75rem 1.5rem 0.75rem;
+}
+span:not(.sr-only) {
+  font-weight: normal;
 }
