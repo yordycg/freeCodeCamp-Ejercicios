@@ -244,9 +244,3 @@ function testSize(num) {
 }
 
 testSize(7);
-
-// ! 75 - Código de golf
-// ! 76 -
-// ! 77 -
-// ! 78 -
-// ! 79 -
