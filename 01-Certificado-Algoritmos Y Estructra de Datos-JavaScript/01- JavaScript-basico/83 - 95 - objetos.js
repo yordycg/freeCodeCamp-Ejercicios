@@ -231,9 +231,3 @@ function updateRecords(records, id, prop, value) {
 }
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
-
-// ! 96 -
-// ! 97 -
-// ! 98 -
-// ! 99 -
-// ! 100 -
