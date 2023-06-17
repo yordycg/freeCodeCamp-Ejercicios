@@ -70,7 +70,14 @@ multiplyAll([
 ]);
 
 // ! 102 - Itera con el bucle "do...while" de JavaScriptq
-// ! 103 -
-// ! 104 -
-// ! 105 -
-// ! 106 -
+
+const myArray1 = [];
+let i2 = 10;
+
+// Cambia solo el código debajo de esta línea
+do {
+  myArray1.push(i2);
+  i2++;
+} while (i2 < 5);
+{
+}
