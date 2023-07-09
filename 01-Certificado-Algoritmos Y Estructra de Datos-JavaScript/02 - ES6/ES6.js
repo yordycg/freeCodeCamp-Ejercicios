@@ -194,12 +194,93 @@ temp = thermos.temperature; // 26 en Celsius
 </>;
 
 // ! 21 - Utiliza la exportación para compartir un bloque de código
-// ! 22 -
-// ! 23 -
-// ! 24 -
-// ! 25 -
-// ! 26 -
-// ! 27 -
-// ! 28 -
-// ! 29 -
-// ! 30 -
+
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+};
+
+const lowercaseString = (string) => {
+  return string.toLowerCase();
+};
+
+export { uppercaseString, lowercaseString };
+
+// ! 22 - Reutiliza código de JavaScript utilizando import
+import { uppercaseString, lowercaseString } from './string_functions.js';
+
+uppercaseString('hello');
+lowercaseString('WORLD!');
+
+// ! 23 - Use * para importar todo de un archivo
+
+import * as stringFunctions from './string_functions.js';
+
+stringFunctions.uppercaseString('hello');
+stringFunctions.lowercaseString('WORLD!');
+
+// ! 24 - Crear un fallback de exportación con export default
+
+// solo puede existir un 'export default' por archivo
+export default function subtract(x, y) {
+  return x - y;
+}
+
+// ! 25 - Importa una exportación por defecto
+
+import subtract from './math_functions.js';
+
+subtract(7, 4);
+
+// ! 26 - Crea una promesa de JavaScript
+
+// const makeServerRequest = new Promise((resolve, reject) => {});
+
+// ! 27 - Cumpleta una promesa con "resolve" y "reject"
+
+// const makeServerRequest = new Promise((resolve, reject) => {
+//   let responseFromServer;
+
+//   if (responseFromServer) {
+//     resolve('We got the data');
+//   } else {
+//     reject('Data not received');
+//   }
+// });
+
+// ! 28 - Maneja una promesa cumplida usando then
+
+// const makeServerRequest = new Promise((resolve, reject) => {
+// responseFromServer es establecido a true para representar una respuesta satisfactoria del servidor
+//   let responseFromServer = true;
+
+//   if (responseFromServer) {
+//     resolve('We got the data');
+//   } else {
+//     reject('Data not received');
+//   }
+// });
+
+// makeServerRequest.then((result) => {
+//   console.log(result);
+// });
+
+// ! 29 - Maneja una promesa rechazada usando catch
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer es establecido a false para representar una respuesta no satisfactoria del servidor
+  let responseFromServer = false;
+
+  if (responseFromServer) {
+    resolve('We got the data');
+  } else {
+    reject('Data not received');
+  }
+});
+
+makeServerRequest
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
